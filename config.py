@@ -10,6 +10,6 @@ tuling_api_key = '7c8cdb56b0dc4450a8deef30a496bd4c'
     百度语音免费申请地址：http://yuyin.baidu.com/
     申请后将你的下面三个参数填入，然后执行baidu_yuyin.py中的main方法测试
 """
-baidu_speech_app_id = '16031816'
-baidu_speech_api_key = 'mwK1Oul70bWZLXvx5EwSNK2A'
-baidu_speech_secret_key = 'ZBR34U4aaWNjl83TUkkcGliKDzZYMoSa'
+baidu_speech_app_id = 'xxx'
+baidu_speech_api_key = 'xxx'
+baidu_speech_secret_key = 'xxx'

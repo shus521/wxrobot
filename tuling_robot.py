@@ -25,7 +25,7 @@ def text_reply(msg):
 
 if __name__ == '__main__':
     """
-        直接点击测试图灵机器人
+        可以直接点击测试图灵机器人
         此apikey为wxpy自带apikey，建议自己免费申请一个
         图灵机器人免费申请地址 http://www.tuling123.com
     """

@@ -8,9 +8,9 @@ import config
 
 
 # 百度语音免费申请应用即可获取这三个key
-APP_ID = config.baidu_yuyin_app_id
-API_KEY = config.baidu_yuyin_api_key
-SECRET_KEY = config.baidu_yuyin_secret_key
+APP_ID = config.baidu_speech_app_id
+API_KEY = config.baidu_speech_api_key
+SECRET_KEY = config.baidu_speech_secret_key
 
 client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
 
@@ -20,7 +20,7 @@ AudioSegment.converter = which("ffmpeg")
 def voice_to_text(msg):
     """语言转文字"""
     print('进来了吗')
-    vo_file = msg.get_file('./ttt.mp3')
+    vo_file = msg.get_file('./wx.mp3')
 
     # vo_file_type = type(vo_file)
     audio = AudioSegment.from_mp3(vo_file)
