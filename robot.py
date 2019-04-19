@@ -1,25 +1,22 @@
 from wxpy import *
 
 import wx_friend
-import baidu_yuyin
+import wx_tools
+
 
 # 微信机器人，缓存登录信息
 bot = Bot(cache_path=True)
 
 
-@bot.register(chats=Friend, msg_types=TEXT)
+@bot.register(chats=Friend)
 def auto_reply(msg):
     """自动回复"""
-    # if msg.type == TEXT:
-    wx_friend.auto_reply(msg)
-    # elif msg.type == RECORDING:
-    #     baidu_transition
+    if msg.type == TEXT:
+        wx_friend.auto_reply(msg)
+    elif msg.type == RECORDING:
+        wx_tools.recording_2_text(msg)
+        wx_friend.auto_reply(msg)
 
-
-@bot.register(chats=Friend, msg_types=RECORDING)
-def auto_reply(msg):
-    text_msg = baidu_yuyin.voice_to_text(msg)
-    wx_friend.auto_reply(text_msg)
 
 
 embed()

@@ -3,14 +3,14 @@ from wxpy import *
 import requests
 import json
 
-import config_operate
+import config
 
 
 """
     免费申请图灵机器人，获取api_key填入common.cfg中
     图灵机器人免费申请地址 http://www.tuling123.com
 """
-tuling = Tuling(api_key=config_operate.tuling_api_key)
+tuling = Tuling(api_key=config.tuling_api_key)
 
 
 def auto_reply(msg):
