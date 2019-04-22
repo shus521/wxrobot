@@ -12,7 +12,7 @@ def auto_reply(msg):
     wx_friend.auto_accept_friends(msg)
 
 
-@bot.register(chats=Friend)
+@bot.register(chats=(Friend, Group))
 def auto_reply(msg):
     """自动回复好友"""
     if msg.type == TEXT:
