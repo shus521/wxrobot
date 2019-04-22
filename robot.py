@@ -3,7 +3,7 @@ from wxpy import *
 import wx_friend
 
 # 微信机器人，缓存登录信息
-bot = Bot(cache_path=True)
+bot = Bot(cache_path=True, console_qr=True)
 
 
 @bot.register(msg_types=FRIENDS)
